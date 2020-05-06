@@ -1,5 +1,0 @@
-# yarn 离线镜像
-# https://classic.yarnpkg.com/blog/2016/11/24/offline-mirror
-
-yarn-offline-mirror "./yarn-offline"
-yarn-offline-mirror-pruning true
