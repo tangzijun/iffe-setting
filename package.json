@@ -1,9 +1,9 @@
 {
-  "name": "myapp2222",
+  "name": "iffe-setting",
   "version": "0.1.0",
   "license": "MIT",
   "main": "src/index.js",
-  "homepage": "https://tangzijun.github.io/my-app/",
+  "homepage": "https://tangzijun.github.io/iffe-setting/",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
