@@ -1,24 +1,29 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "typeface-roboto"; // Google字体
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { SettingView } from "./components/setting/index";
+import getAppTheme from "./app-theme";
+// import Container from "@material-ui/core/Container";
 
 function App() {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const theme = React.useMemo(() => {
+    const themeType = prefersDarkMode ? "dark" : "light";
+    return createMuiTheme({
+      app: getAppTheme(themeType),
+      palette: {
+        type: themeType,
+        isDark: prefersDarkMode,
+      },
+    });
+  }, [prefersDarkMode]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>我是离线构建，并自动部署的网站</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      {/* <Container fixed> */}
+      <SettingView />
+      {/* </Container> */}
+    </ThemeProvider>
   );
 }
-
 export default App;
