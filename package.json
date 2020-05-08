@@ -1,8 +1,12 @@
 {
-  "name": "my-app",
+  "name": "myapp2222",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "main": "src/index.js",
   "homepage": "https://tangzijun.github.io/my-app/",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",
