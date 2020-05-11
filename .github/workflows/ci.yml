@@ -7,23 +7,5 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
-
       - name: test env
-        env:
-          ZIJUN_SECRET: ${{ secrets.zijun_pwd }}
-        run: echo "你好 $ZIJUN_SECRET"
-
-      - name: install dependencies
-        run: yarn
-
-      - name: build
-        run: yarn build
-
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+        run:| echo "$HOME"
