@@ -1,13 +1,16 @@
 {
-  "name": "@tangzijun/iffe-setting2",
-  "version": "0.2.0",
+  "name": "@tangzijun/iffe-setting",
+  "version": "0.2.8",
   "license": "MIT",
   "main": "build/index.js",
-  "homepage": "https://tangzijun.github.io/iffe-setting1/",
+  "homepage": "https://tangzijun.github.io/iffe-setting/",
   "files": [
     "build"
   ],
-  "repository": "https://github.com/tangzijun/iffe-setting.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tangzijun/iffe-setting.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",

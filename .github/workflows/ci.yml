@@ -10,6 +10,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: test evn
+        evn:
+          ZIJUN_SECRET: ${{ secrets.zijun_secret }}
+        run: echo "$ZIJUN_SECRET"
+
       - name: install dependencies
         run: yarn
 
