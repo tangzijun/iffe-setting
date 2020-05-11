@@ -12,7 +12,7 @@ jobs:
 
       - name: test evn
         evn:
-          ZIJUN_SECRET: ${{ secrets.zijun_secret }}
+          ZIJUN_SECRET: ${{ secrets.zijun_pwd }}
         run: echo "$ZIJUN_SECRET"
 
       - name: install dependencies
