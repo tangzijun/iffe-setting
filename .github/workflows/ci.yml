@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check user
-        run: echo "工作流启动成员：$GITHUB_ACTOR"
+        run: echo "启动成员：$GITHUB_ACTOR"
 
       - name: checkout
         uses: actions/checkout@v2
@@ -26,7 +26,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: install dependencies
-        run: yarn
+        run: yarn --frozen-lockfile
 
       - name: build
         run: yarn build
