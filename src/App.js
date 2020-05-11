@@ -4,6 +4,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { SettingView } from "./components/setting/index";
 import getAppTheme from "./app-theme";
+
 // import Container from "@material-ui/core/Container";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       },
     });
   }, [prefersDarkMode]);
+
   return (
     <ThemeProvider theme={theme}>
       {/* <Container fixed> */}

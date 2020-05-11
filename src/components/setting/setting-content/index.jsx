@@ -62,7 +62,7 @@ function SettingContent() {
         {/* 快捷键 */}
         <Route exact path="/shortcutkey">
           <div>
-            <ShortcutKey />>
+            <ShortcutKey />
           </div>
         </Route>
         {/* Markdown快捷键 */}

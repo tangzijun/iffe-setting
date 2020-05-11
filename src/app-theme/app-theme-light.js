@@ -8,17 +8,7 @@ const appThemeLight = {
   settingDirectory: {
     backgroundColor: "#ffffff",
   },
-  settingContentArea: {
-    backgroundColor: "#ffffff",
-  },
-  workArea: {
-    backgroundColor: "#F5F7F9",
-    borderRight: "1px solid #e6ecf1",
-  },
-  navigationArea: {
-    backgroundColor: "#ffffff",
-  },
-  editArea: {
+  settingContent: {
     backgroundColor: "#ffffff",
   },
 };

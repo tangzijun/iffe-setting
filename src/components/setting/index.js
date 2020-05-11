@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   SettingDirectory,
   SettingHintIcon,
@@ -11,28 +11,27 @@ const dataSettingDirectory = require("./data/dataSettingDirectory.json");
 const dataSettingHintIcon = require("./data/dataSettingHintIcon.json");
 
 const useStyles = makeStyles((theme) => ({
-  setting: {
+  setting: (newType) => ({
     display: "flex",
     justifyContent: "center",
-    //     height: windowHeight
+    height: newType.height,
     width: "100%",
     margin: 0,
     padding: 0,
     backgroundColor: theme.app.settingWrap.backgroundColor,
-    //     height: 2000,
-  },
+  }),
   settingLeft: {
     display: "flex",
     justifyContent: "flex-end",
-    // width: "35%",
+    width: "35%",
     height: "100%",
     backgroundColor: theme.app.settingDirectory.backgroundColor,
   },
   settingRight: {
     display: "flex",
     justifyContent: "flex-start",
-    // width: "65%",
-    backgroundColor: theme.app.settingContentArea.backgroundColor,
+    width: "65%",
+    backgroundColor: theme.app.settingContent.backgroundColor,
   },
   directory: {
     display: "flex",
@@ -46,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
   content: {
     // width: 740,
     width: "100%",
-    height: 1000,
     margin: 0,
     padding: 0,
     flexWrap: "wrap",
@@ -64,13 +62,28 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SettingView() {
-  const classes = useStyles();
-  // useEffect(() => {
-  //   const windowHeight = window.innerHeight;
-  // });
+  const getWindowSize = () => ({
+    innerHeight: window.innerHeight,
+    innerWidth: window.innerWidth,
+  });
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+  const handleResize = () => {
+    setWindowSize(getWindowSize());
+  };
+  useEffect(() => {
+    // 监听
+    window.addEventListener("resize", handleResize);
+    // 销毁
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
+  const newType = {
+    height: windowSize.innerHeight,
+  };
+  const classes = useStyles(newType);
   return (
     <Router>
-      <div className={classes.setting}>
+      <div className={classes.setting} id="setting">
         <div className={classes.settingLeft}>
           <div className={classes.directory}>
             {/* 目录 */}
