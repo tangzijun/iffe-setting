@@ -43,7 +43,6 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 0,
   },
   content: {
-    // width: 740,
     width: "100%",
     margin: 0,
     padding: 0,

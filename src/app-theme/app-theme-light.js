@@ -6,10 +6,10 @@ const appThemeLight = {
     backgroundColor: "#ffffff",
   },
   settingDirectory: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "rgb(242,243,245)",
   },
   settingContent: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "rgb(255,255,255)",
   },
 };
 export default appThemeLight;
