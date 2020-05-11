@@ -13,7 +13,7 @@ jobs:
       - name: test env
         with:
           ZIJUN_SECRET: ${{ secrets.zijun_pwd }}
-        run: echo "$ZIJUN_SECRET"
+        run: echo 11 "$ZIJUN_SECRET"
 
       - name: install dependencies
         run: yarn
