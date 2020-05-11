@@ -26,7 +26,15 @@ function UpdateLog() {
       >
         <SwitchButton />
       </SelectButtonGroupView>
-      12233333js ji ifn so
+      <SelectButtonGroupView
+        data={[
+          {
+            text: "开启桌面通知",
+          },
+        ]}
+      >
+        <SwitchButton />
+      </SelectButtonGroupView>
     </SettingContainer>
   );
 }

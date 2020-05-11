@@ -11,7 +11,6 @@ function ConnectWithUs() {
     <SettingContainer>
       <DefaultTitle>联系我们</DefaultTitle>
       <Box height={20} />
-      <span>Schemeandpayment</span>
     </SettingContainer>
   );
 }
