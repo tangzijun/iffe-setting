@@ -1,4 +1,4 @@
-name: deploy-github-pages
+name: deploy-github-pages2
 on:
   push:
     branches:
@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test env
-        run:| echo "$HOME"
+        run: echo "$HOME"
