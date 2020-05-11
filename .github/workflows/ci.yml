@@ -10,8 +10,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: test evn
-        evn:
+      - name: test env
+        env:
           ZIJUN_SECRET: ${{ secrets.zijun_pwd }}
         run: echo "$ZIJUN_SECRET"
 
