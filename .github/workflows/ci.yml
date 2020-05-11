@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: test env
-        with:
+        env:
           ZIJUN_SECRET: ${{ secrets.zijun_pwd }}
         run: echo "你好 $ZIJUN_SECRET"
 
