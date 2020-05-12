@@ -15,8 +15,8 @@ jobs:
 
       - name: set node env
         uses: actions/setup-node@v1
-        with: 
-          registry-url: 'https://npm.pkg.github.com'
+        with:
+          registry-url: "https://npm.pkg.github.com"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -38,6 +38,8 @@ jobs:
 
       - name: build
         run: yarn build
+
+      - name: publish
         run: npm publish
 
       - name: deploy
