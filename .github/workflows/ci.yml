@@ -51,9 +51,9 @@ jobs:
       #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@master
