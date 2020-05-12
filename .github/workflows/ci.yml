@@ -1,8 +1,12 @@
 name: deploy-github-pages
+
 on:
-  push:
-    branches:
-      - master
+  repository_dispatch:
+    types: [run_tests]
+# on:
+#   push:
+#     branches:
+#       - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -38,6 +42,7 @@ jobs:
         run: yarn build
 
       - name: publish
+        # 发布先行版
         run: npm version prerelease --preid=alpha && npm publish --tag next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
