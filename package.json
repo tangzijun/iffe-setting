@@ -1,6 +1,6 @@
 {
   "name": "@tangzijun/iffe-setting",
-  "version": "0.3.8-alpha.1",
+  "version": "0.3.8-alpha.2",
   "license": "MIT",
   "main": "build/index.js",
   "homepage": "https://tangzijun.github.io/iffe-setting/",
