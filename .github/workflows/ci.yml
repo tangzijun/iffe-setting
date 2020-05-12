@@ -13,6 +13,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: set node env
+        uses: actions/setup-node@v1
+        with: 
+          registry-url: 'https://npm.pkg.github.com'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -31,6 +38,7 @@ jobs:
 
       - name: build
         run: yarn build
+        run: npm publish
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@master
