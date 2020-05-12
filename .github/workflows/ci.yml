@@ -13,14 +13,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: set node env
-        uses: actions/setup-node@v1
-        with:
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@tangzijun"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -34,6 +26,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: set node env
+        uses: actions/setup-node@v1
+        with:
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@tangzijun"
+
       - name: install dependencies
         run: yarn --frozen-lockfile
 
@@ -42,6 +40,8 @@ jobs:
 
       - name: publish
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@master
