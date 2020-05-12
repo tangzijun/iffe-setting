@@ -26,6 +26,21 @@ const useStyles = makeStyles((theme) => ({
     width: "35%",
     height: "100%",
     backgroundColor: theme.app.settingDirectory.backgroundColor,
+    flexWrap: "wrap",
+    overflow: "auto",
+    overflowY: "scroll",
+    overflowX: "hidden",
+    "&::-webkit-scrollbar": {
+      width: 3,
+    },
+    "&::-webkit-scrollbar-thumb": {
+      backgroundColor: theme.app.settingDirectory.scrollbarColor,
+      borderRadius: 2,
+    },
+    // 火狐浏览器轨道宽度
+    scrollbarWidth: "thin",
+    // 火狐浏览器滑块颜色,轨道颜色
+    scrollbarColor: "rgba(184,186,186,1) rgba(255,255,255,0)",
   },
   settingRight: {
     display: "flex",
@@ -54,9 +69,13 @@ const useStyles = makeStyles((theme) => ({
       width: 6,
     },
     "&::-webkit-scrollbar-thumb": {
-      backgroundColor: "rgba(184,186,186,1)",
+      backgroundColor: theme.app.settingContent.scrollbarColor,
       borderRadius: 2,
     },
+    // 火狐浏览器轨道宽度
+    scrollbarWidth: "thin",
+    // 火狐浏览器滑块颜色,轨道颜色
+    scrollbarColor: "rgba(184,186,186,1) rgba(255,255,255,0)",
   },
 }));
 
@@ -89,8 +108,7 @@ function SettingView() {
             <SettingDirectory data={dataSettingDirectory.nodes} />
             <SettingHintIcon data={dataSettingHintIcon.nodes} />
             <SettingHintText
-              text={"Stable 58202 (6914c16)"}
-              des={"OS X 10.15.4 64-Bit"}
+              text={"Stable 58202 (6914c16)  OS X 10.15.4 64-Bit"}
             />
           </div>
         </div>
