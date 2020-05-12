@@ -26,11 +26,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: set node env
-        uses: actions/setup-node@v1
-        with:
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@tangzijun"
+      # - name: set node env
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     registry-url: "https://npm.pkg.github.com"
+      #     scope: "@tangzijun"
 
       - name: install dependencies
         run: yarn --frozen-lockfile
