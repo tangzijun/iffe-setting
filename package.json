@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cz": "git add . && git-cz",
+    "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
@@ -60,9 +61,6 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "./cz-config.js"
     }
   },
   "husky": {
