@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cmt": "git-cz",
+    "cz": "git add . && git-cz",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
