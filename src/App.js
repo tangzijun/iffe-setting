@@ -5,6 +5,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { SettingView } from "./components/setting/index";
 import getAppTheme from "./app-theme";
 import Test from "./Test";
+
 Test();
 
 function App() {
