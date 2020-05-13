@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cz": "git add . && git-cz",
+    "cz": "git add . && yarn iffe-commitizen-changelog",
     "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "semantic-release": "semantic-release"
   },
@@ -51,18 +51,10 @@
     ]
   },
   "devDependencies": {
-    "@tangzijun/iffe-commitizen-changelog": "0.0.1",
-    "commitizen": "^4.1.2",
+    "@tangzijun/iffe-commitizen-changelog": "^0.0.3-alpha.0",
     "conventional-changelog": "^3.1.21",
-    "cz-conventional-changelog": "^3.2.0",
-    "cz-customizable": "^6.2.0",
     "husky": "^4.2.5",
     "semantic-release": "^17.0.7"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    }
   },
   "husky": {
     "hooks": {

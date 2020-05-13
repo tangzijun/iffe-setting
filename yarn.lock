@@ -2116,13 +2116,17 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tangzijun/iffe-commitizen-changelog@0.0.1":
-  version "0.0.1"
-  resolved "https://npm.pkg.github.com/download/@tangzijun/iffe-commitizen-changelog/0.0.1/992d4221af595da81256233dc3137590934d607eba30057d715be2442784d44a#8af860c4f77a82c8c33eb8a53fcc88e9fba1c38c"
-  integrity sha512-8/cnUL5SLNE1Lkp09aJIORLFWM/BYDrvZFH8cesvvJgD6lm0vKB1Z1ysV16Oe4NrVJveP0PNOvPXWsPU7z1l9Q==
+"@tangzijun/iffe-commitizen-changelog@^0.0.3-alpha.0":
+  version "0.0.3-alpha.0"
+  resolved "https://npm.pkg.github.com/download/@tangzijun/iffe-commitizen-changelog/0.0.3-alpha.0/7b4d3a4f0d3244d2d1ff71654dc930d990a78dc3c7230c827376be954fb60277#4f3fa71a162808eddd35afed420c9b26249740dc"
+  integrity sha512-Ua+usSuT2tUMqAkXaMrtp9rqXWKKKbbyyeVV46ZLyDERv0pcl+inJtiwvthajtMoIcVOcBvb1Kmk7hiCJUEYBA==
   dependencies:
+    "@commitlint/cli" "^8.3.5"
+    "@commitlint/config-conventional" "^8.3.4"
     commitizen "^2.7.6"
     cz-conventional-changelog "^1.1.5"
+    cz-customizable "^6.2.0"
+    husky "^4.2.5"
 
 "@testing-library/dom@^6.15.0":
   version "6.16.0"
