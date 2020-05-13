@@ -6,8 +6,6 @@ import { SettingView } from "./components/setting/index";
 import getAppTheme from "./app-theme";
 import Test from "./Test";
 
-Test();
-
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
@@ -30,3 +28,5 @@ function App() {
   );
 }
 export default App;
+
+Test();
