@@ -13,6 +13,7 @@ function App() {
 
   const theme = React.useMemo(() => {
     const themeType = prefersDarkMode ? "dark" : "light";
+
     return createMuiTheme({
       app: getAppTheme(themeType),
       palette: {
