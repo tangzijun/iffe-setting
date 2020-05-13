@@ -11,6 +11,14 @@
     "type": "git",
     "url": "https://github.com/tangzijun/iffe-setting.git"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cm": "git add . && git-cz",
+    "semantic-release": "semantic-release"
+  },
   "dependencies": {
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
@@ -23,14 +31,6 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "solidoc-base-component-lib": "^1.3.6"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "commit": "git add . && git-cz",
-    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,11 +50,17 @@
   "devDependencies": {
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "3.2.0",
+    "husky": "^4.2.5",
     "semantic-release": "^17.0.7"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
