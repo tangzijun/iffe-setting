@@ -2,9 +2,9 @@
 
 module.exports = {
   types: [
-    { value: "feat", name: "feat: 新增功能" },
-    { value: "fix", name: "fix: 修复了BUG" },
-    { value: "docs", name: "docs:     Documentation only changes" },
+    { value: "feat", name: "feat:            新增功能" },
+    { value: "fix", name: "fix:            修复了BUG" },
+    { value: "docs", name: "docs:     修改了文档" },
     {
       value: "style",
       name:
