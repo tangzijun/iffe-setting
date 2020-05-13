@@ -5879,6 +5879,18 @@ cz-conventional-changelog@3.2.0, cz-conventional-changelog@^3.2.0:
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
 
+cz-customizable@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/cz-customizable/-/cz-customizable-6.2.0.tgz#4591bef5eae9fcef44bf024259723979404cdee0"
+  integrity sha512-6fBA8pbwApTY20Q5aDkWgJcg5wCmbwlcnccUFyBQypN8AoRJ0Vt4pLehai0/P2Xr29t2UDYoNGOUDhi4eoR0JQ==
+  dependencies:
+    editor "1.0.0"
+    find-config "^1.0.0"
+    inquirer "^6.3.1"
+    lodash "^4.17.11"
+    temp "^0.9.0"
+    word-wrap "^1.2.3"
+
 d@1, d@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/d/download/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
@@ -6613,7 +6625,7 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
-editor@~1.0.0:
+editor@1.0.0, editor@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/editor/-/editor-1.0.0.tgz#60c7f87bd62bcc6a894fa8ccd6afb7823a24f742"
   integrity sha1-YMf4e9YrzGqJT6jM1q+3gjok90I=
@@ -7681,6 +7693,13 @@ find-cache-dir@^3.2.0:
     commondir "^1.0.1"
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
+
+find-config@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/find-config/-/find-config-1.0.0.tgz#eafa2b9bc07fa9c90e9a0c3ef9cecf1cc800f530"
+  integrity sha1-6vorm8B/qckOmgw++c7PHMgA9TA=
+  dependencies:
+    user-home "^2.0.0"
 
 find-node-modules@2.0.0:
   version "2.0.0"
@@ -9936,6 +9955,25 @@ inquirer@7.0.4:
     run-async "^2.2.0"
     rxjs "^6.5.3"
     string-width "^4.1.0"
+    strip-ansi "^5.1.0"
+    through "^2.3.6"
+
+inquirer@^6.3.1:
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.5.2.tgz#ad50942375d036d327ff528c08bd5fab089928ca"
+  integrity sha512-cntlB5ghuB0iuO65Ovoi8ogLHiWGs/5yNrtUcKjFhSSiVeAIVpD7koaSU9RM8mpXw5YDi9RdYXGQMaOURB7ycQ==
+  dependencies:
+    ansi-escapes "^3.2.0"
+    chalk "^2.4.2"
+    cli-cursor "^2.1.0"
+    cli-width "^2.0.0"
+    external-editor "^3.0.3"
+    figures "^2.0.0"
+    lodash "^4.17.12"
+    mute-stream "0.0.7"
+    run-async "^2.2.0"
+    rxjs "^6.4.0"
+    string-width "^2.1.0"
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
@@ -18400,7 +18438,7 @@ temp-dir@^2.0.0:
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
   integrity sha512-aoBAniQmmwtcKp/7BzsH8Cxzv8OL736p7v1ihGb5e9DJ9kTwGWHrQrVB5+lfVDzfGrdRzXch+ig7LHaY1JTOrg==
 
-temp@^0.9.1:
+temp@^0.9.0, temp@^0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/temp/-/temp-0.9.1.tgz#2d666114fafa26966cd4065996d7ceedd4dd4697"
   integrity sha512-WMuOgiua1xb5R56lE0eH6ivpVmg/lq2OHm4+LtT/xtEtPQ+sz6N3bBM6WZ5FvO1lO4IKIOb43qnhoc4qxP5OeA==
@@ -19358,6 +19396,13 @@ use@^3.1.0:
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
 
+user-home@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/user-home/-/user-home-2.0.0.tgz#9c70bfd8169bc1dcbf48604e0f04b8b49cde9e9f"
+  integrity sha1-nHC/2Babwdy/SGBODwS4tJzenp8=
+  dependencies:
+    os-homedir "^1.0.0"
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -19953,7 +19998,7 @@ wonka@^4.0.10, wonka@^4.0.9:
   resolved "https://registry.yarnpkg.com/wonka/-/wonka-4.0.13.tgz#8d188160bd5742870c78ede7a4eba686d089a33f"
   integrity sha512-aWg92IVvbP/kp+q9rw+k/Uw3C/S2J0dTDNhEhivGVH3GXJZgpFk2nuyVtiS7Y1d0UG3m4jvOrR7bPXim6D/TBg==
 
-word-wrap@^1.0.3, word-wrap@~1.2.3:
+word-wrap@^1.0.3, word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
