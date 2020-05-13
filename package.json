@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.1.2",
+    "conventional-changelog": "^3.1.21",
     "cz-conventional-changelog": "^3.2.0",
     "cz-customizable": "^6.2.0",
     "husky": "^4.2.5",
@@ -57,6 +58,9 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "cz-customizable": {
+      "config": "./cz-config.js"
     }
   }
 }
