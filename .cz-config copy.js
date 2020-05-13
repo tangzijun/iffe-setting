@@ -7,31 +7,26 @@ module.exports = {
     { value: "docs", name: "docs:     修改了文档" },
     {
       value: "style",
-      name: "style:    不会影响代码含义更改（如空格，格式，分号等等）",
+      name:
+        "style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)",
     },
     {
       value: "refactor",
-      name: "refactor: 代码进行了重构，但不影响功能",
+      name:
+        "refactor: A code change that neither fixes a bug nor adds a feature",
     },
     {
       value: "perf",
-      name: "perf:     性能改善",
+      name: "perf:     A code change that improves performance",
     },
-    { value: "test", name: "test:     添加测试代码" },
-    {
-      value: "build",
-      name:
-        "build:    变更项目构建或外部依赖（例如scopes: webpack、gulp、npm等）",
-    },
-    {
-      value: "ci",
-      name: "ci:       更改持续集成相关的的配置文件和package中的scripts命令等",
-    },
+    { value: "test", name: "test:     Adding missing tests" },
     {
       value: "chore",
-      name: "chore:    变更构建流程或辅助工具",
+      name:
+        "chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation",
     },
-    { value: "revert", name: "revert:   代码回退" },
+    { value: "revert", name: "revert:   Revert to a commit" },
+    { value: "WIP", name: "WIP:      Work in progress" },
   ],
 
   scopes: [
@@ -61,18 +56,20 @@ module.exports = {
   messages: {
     type: "选择提交类型:",
     scope: "选择该提交的影响范围(可选):",
-    customScope: "选择本次提交影响的范围:",
-    subject: "编写简短的变更描述:\n",
-    body: '编写更加详细的描述 (可选). 使用 "|" 进行换行:\n',
-    breaking: "列出与上一个版本不兼容的变更 (可选):\n",
-    footer: "列出本次变更后需要关闭的问题（ISSUES）(可选). 例如: #31, #34:\n",
-    confirmCommit: "确定提交吗?",
+    customScope: "Denote the SCOPE of this change:",
+    subject: "Write a SHORT, IMPERATIVE tense description of the change:\n",
+    body:
+      'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
+    breaking: "List any BREAKING CHANGES (optional):\n",
+    footer:
+      "List any ISSUES CLOSED by this change (optional). E.g.: #31, #34:\n",
+    confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
 
   allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix"],
   // skip any questions you want
-  //   skipQuestions: ["body"],
+  skipQuestions: ["body"],
 
   // limit subject length
   subjectLimit: 100,
