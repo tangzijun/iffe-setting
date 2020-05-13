@@ -20,6 +20,8 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
     "@testing-library/jest-dom": "^5.5.0",
@@ -61,6 +63,11 @@
     },
     "cz-customizable": {
       "config": "./cz-config.js"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
