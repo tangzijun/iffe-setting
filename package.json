@@ -16,15 +16,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cz": "git add . && yarn iffe-commitizen-changelog",
     "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "cz": "git add . && git-cz"
   },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
+    "@tangzijun/iffe-commitizen-changelog": "/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -51,10 +52,15 @@
     ]
   },
   "devDependencies": {
-    "@tangzijun/iffe-commitizen-changelog": "^0.0.3-alpha.0",
-    "conventional-changelog": "^3.1.21",
-    "husky": "^4.2.5",
     "semantic-release": "^17.0.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "path": "node_modules/@tangzijun/iffe-commit/.cz-config.js"
+    }
   },
   "husky": {
     "hooks": {
