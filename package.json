@@ -18,7 +18,7 @@
     "eject": "react-scripts eject",
     "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "semantic-release": "semantic-release",
-    "cz": "git add . && git-cz"
+    "commit": "git add . && git-cz"
   },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
