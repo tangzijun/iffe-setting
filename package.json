@@ -25,7 +25,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
-    "@tangzijun/iffe-commitizen-changelog": "/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen",
+    "@tangzijun/iffe-commit": "/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -59,12 +59,12 @@
       "path": "node_modules/cz-customizable"
     },
     "cz-customizable": {
-      "path": "node_modules/@tangzijun/iffe-commit/.cz-config.js"
+      "config": "node_modules/@tangzijun/iffe-commit/cz-config.js"
     }
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint --config node_modules/@tangzijun/iffe-commit/commitlint.config.js -E HUSKY_GIT_PARAMS"
     }
   }
 }

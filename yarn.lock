@@ -2116,7 +2116,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tangzijun/iffe-commitizen-changelog@/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen":
+"@tangzijun/iffe-commit@/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen":
   version "0.0.3-alpha.5"
   dependencies:
     "@commitlint/cli" "^8.3.5"
@@ -2129,7 +2129,7 @@
     husky "^4.2.5"
     minimist "^1.2.5"
 
-"@tangzijun/iffe-commitizen-changelog@file:../../PROJECT/AIZHI/iffe-commitizen":
+"@tangzijun/iffe-commit@file:../../PROJECT/AIZHI/iffe-commitizen":
   version "0.0.3-alpha.5"
   dependencies:
     "@commitlint/cli" "^8.3.5"
