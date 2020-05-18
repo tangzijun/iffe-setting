@@ -10,6 +10,7 @@ import { ShortcutKey } from "./view/ShortcutKey";
 import { MarkdownShortcutkey } from "./view/MarkdownShortcutkey";
 import { UpdateLog } from "./view/UpdateLog";
 import { ConnectWithUs } from "./view/ConnectWithUs";
+import { LogIn } from "../../login/index";
 function ToUserSettingsAccount() {
   return (
     <div>
@@ -81,6 +82,11 @@ function SettingContent() {
         <Route exact path="/connectwithus">
           <div>
             <ConnectWithUs />
+          </div>
+        </Route>
+        <Route exact path="/login">
+          <div>
+            <LogIn />
           </div>
         </Route>
       </Switch>

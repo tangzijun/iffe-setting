@@ -10,7 +10,7 @@
     },
     {
       "icon": "facebook",
-      "url": "https://t.bilibili.com"
+      "url": "http://localhost:3000/login"
     }
   ]
 }

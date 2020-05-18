@@ -4,6 +4,7 @@ import appThemeDefault from "./app-theme-defaule";
 
 const appThemeDark = {
   ...appThemeDefault,
+  wrap: { color1: "rgb(54, 57, 63)" },
   settingWrap: {
     backgroundColor: "rgb(47, 49, 54)",
   },

@@ -2,8 +2,9 @@ import React from "react";
 import "typeface-roboto"; // Google字体
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { SettingView } from "./components/setting/index";
+// import { SettingView } from "./components/setting/index";
 import getAppTheme from "./app-theme";
+import { LogIn } from "./components/login";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <SettingView />
+      <LogIn />
     </ThemeProvider>
   );
 }
