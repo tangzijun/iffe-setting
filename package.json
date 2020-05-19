@@ -18,14 +18,15 @@
     "eject": "react-scripts eject",
     "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "semantic-release": "semantic-release",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "push": "git push origin master",
+    "pull": "git pull origin master --rebase"
   },
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
-    "@tangzijun/iffe-commit": "/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "iffe-commit": "^1.1.1",
     "semantic-release": "^17.0.7"
   },
   "config": {
@@ -59,12 +61,12 @@
       "path": "node_modules/cz-customizable"
     },
     "cz-customizable": {
-      "config": "node_modules/@tangzijun/iffe-commit/cz-config.js"
+      "config": "node_modules/iffe-commit/cz-config.js"
     }
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint --config node_modules/@tangzijun/iffe-commit/commitlint.config.js -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint --config node_modules/iffe-commit/commitlint.config.js -E HUSKY_GIT_PARAMS"
     }
   }
 }

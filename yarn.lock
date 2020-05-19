@@ -2116,32 +2116,6 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tangzijun/iffe-commit@/Users/tangzijun/CODESPACE/PROJECT/AIZHI/iffe-commitizen":
-  version "0.0.3-alpha.5"
-  dependencies:
-    "@commitlint/cli" "^8.3.5"
-    "@commitlint/config-conventional" "^8.3.4"
-    commitizen "^2.7.6"
-    cross-env "^7.0.2"
-    cz-conventional-changelog "^1.1.5"
-    cz-customizable "^6.2.0"
-    edit-json-file "^1.4.0"
-    husky "^4.2.5"
-    minimist "^1.2.5"
-
-"@tangzijun/iffe-commit@file:../../PROJECT/AIZHI/iffe-commitizen":
-  version "0.0.3-alpha.5"
-  dependencies:
-    "@commitlint/cli" "^8.3.5"
-    "@commitlint/config-conventional" "^8.3.4"
-    commitizen "^2.7.6"
-    cross-env "^7.0.2"
-    cz-conventional-changelog "^1.1.5"
-    cz-customizable "^6.2.0"
-    edit-json-file "^1.4.0"
-    husky "^4.2.5"
-    minimist "^1.2.5"
-
 "@testing-library/dom@^6.15.0":
   version "6.16.0"
   resolved "https://registry.npm.taobao.org/@testing-library/dom/download/@testing-library/dom-6.16.0.tgz?cache=0&sync_timestamp=1588893447169&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40testing-library%2Fdom%2Fdownload%2F%40testing-library%2Fdom-6.16.0.tgz#04ada27ed74ad4c0f0d984a1245bb29b1fd90ba9"
@@ -10055,6 +10029,21 @@ iferr@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/iferr/-/iferr-1.0.2.tgz#e9fde49a9da06dc4a4194c6c9ed6d08305037a6d"
   integrity sha512-9AfeLfji44r5TKInjhz3W9DyZI1zR1JAf2hVBMGhddAKPqBsupb89jGfbCTHIGZd6fGZl9WlHdn4AObygyMKwg==
+
+iffe-commit@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/iffe-commit/-/iffe-commit-1.1.1.tgz#e5d5e9529e94c4d2eb5749ad865ec7bbe6f81e54"
+  integrity sha512-d2wnuIwCO3nQF+xPRgZdN+iGE19QX08Fmvqq8cKHOfC+GIetqgNusDkjGxF+nk/cUci5bBFeq++Exzem1Av/Iw==
+  dependencies:
+    "@commitlint/cli" "^8.3.5"
+    "@commitlint/config-conventional" "^8.3.4"
+    commitizen "^2.7.6"
+    cross-env "^7.0.2"
+    cz-conventional-changelog "^1.1.5"
+    cz-customizable "^6.2.0"
+    edit-json-file "^1.4.0"
+    husky "^4.2.5"
+    minimist "^1.2.5"
 
 ignore-walk@^3.0.1:
   version "3.0.3"
