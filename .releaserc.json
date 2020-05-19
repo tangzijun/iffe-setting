@@ -15,21 +15,6 @@
       {
         "npmPublish": true
       }
-    ],
-    "@semantic-release/github",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
-    ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "CHANGELOG.md"
-        ]
-      }
     ]
   ]
 }
