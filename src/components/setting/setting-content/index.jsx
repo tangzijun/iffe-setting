@@ -23,7 +23,7 @@ function SettingContent() {
     <div>
       <Switch>
         {/*  社设置默认页面我的账户 */}
-        <Route path="/iffe-setting" component={ToUserSettingsAccount} exact />
+        <Route path="/setting" component={ToUserSettingsAccount} exact />
         {/* 我的账户 */}
         <Route exact path="/usersettingsaccount">
           <div>

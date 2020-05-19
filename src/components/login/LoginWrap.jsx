@@ -137,7 +137,7 @@ function LogInWrap(props) {
               需要新的账号?<span>&nbsp;</span>
               <Button
                 type={"link"}
-                href={"https://tangzijun.github.io/iffe-setting"}
+                href={"https://tangzijun.github.io/setting"}
               >
                 注册
               </Button>

@@ -29,7 +29,13 @@ function App() {
           {/* <Link to={"./login"}>login</Link>
           <Link to={"./setting"}>setting</Link> */}
         </div>
+
         <Switch>
+          <Route path="/iffe-setting" exact>
+            <div>
+              <LogIn />
+            </div>
+          </Route>
           <Route path="/login" exact>
             <div>
               <LogIn />
