@@ -44,6 +44,11 @@ jobs:
         run: yarn build
 
       # - name: publish
+      #   run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: publish
       # 发布先行版
       # run: npm version prerelease --preid=alpha && npm publish --tag next
       # run: npm publish --tag next
