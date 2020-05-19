@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/tangzijun/iffe-setting/compare/v4.1.0...v4.1.1) (2020-05-19)
+
+
+### Bug Fixes
+
+* 修复ci流程测试发布 ([422a326](https://github.com/tangzijun/iffe-setting/commit/422a326d1caab7ad9aae54635b3593a008f2c3aa))
+
 # [4.1.0](https://github.com/tangzijun/iffe-setting/compare/v4.0.0...v4.1.0) (2020-05-19)
 
 
