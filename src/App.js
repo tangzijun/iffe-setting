@@ -31,17 +31,22 @@ function App() {
         </div>
 
         <Switch>
+          <Route path="/" exact>
+            <div>
+              <LogIn />
+            </div>
+          </Route>
           <Route path="/iffe-setting" exact>
             <div>
               <LogIn />
             </div>
           </Route>
-          <Route path="/login" exact>
+          <Route path="/iffe-setting/login" exact>
             <div>
               <LogIn />
             </div>
           </Route>
-          <Route exact path="/setting">
+          <Route exact path="/iffe-setting/setting">
             <div>
               <SettingView />
             </div>
