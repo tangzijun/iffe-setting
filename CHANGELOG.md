@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/tangzijun/iffe-setting/compare/v4.0.0...v4.1.0) (2020-05-19)
+
+
+### Features
+
+* 修改发布配置 ([d8f0331](https://github.com/tangzijun/iffe-setting/commit/d8f03313e460683ff56d271d3b8bf921db96c5af))
+
 # [4.0.0](https://github.com/tangzijun/iffe-setting/compare/v3.0.1...v4.0.0) (2020-05-19)
 
 
