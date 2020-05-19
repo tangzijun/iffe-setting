@@ -34,8 +34,6 @@ jobs:
 
       - name: set node env
         uses: actions/setup-node@v1
-        with:
-          registry-url: "https://npm.pkg.github.com"
 
       # - name: install dependencies
       #   run: yarn install --ignore-scripts
