@@ -10,6 +10,13 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": true,
+        "tarballDir": "build"
+      }
+    ],
     "@semantic-release/github",
     [
       "@semantic-release/changelog",
