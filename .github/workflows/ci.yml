@@ -36,7 +36,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           registry-url: "https://npm.pkg.github.com"
-          scope: "@tangzijun"
 
       # - name: install dependencies
       #   run: yarn install --ignore-scripts
