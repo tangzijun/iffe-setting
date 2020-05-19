@@ -1,6 +1,6 @@
 {
   "name": "@tangzijun/iffe-setting",
-  "version": "0.2.8",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "build/index.js",
   "homepage": "https://tangzijun.github.io/iffe-setting/",
@@ -11,7 +11,18 @@
     "type": "git",
     "url": "https://github.com/tangzijun/iffe-setting.git"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cz": "git add . && git-cz",
+    "ver1": "yarn conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "semantic-release": "semantic-release"
+  },
   "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
     "@testing-library/jest-dom": "^5.5.0",
@@ -23,12 +34,6 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "solidoc-base-component-lib": "^1.4.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,5 +49,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "conventional-changelog": "^3.1.21",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.2.0",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.0.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }

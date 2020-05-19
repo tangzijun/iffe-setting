@@ -1,4 +1,10 @@
+# https://github.com/semantic-release/semantic-release
 name: deploy-github-pages
+
+# on:
+#   repository_dispatch:
+#   types: [run_tests]
+
 on:
   push:
     branches:
@@ -26,11 +32,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - name: set node env
+        uses: actions/setup-node@v1
+        with:
+          registry-url: "https://npm.pkg.github.com"
+
       - name: install dependencies
         run: yarn --frozen-lockfile
 
       - name: build
         run: yarn build
+
+      # - name: publish
+      # 发布先行版
+      # run: npm version prerelease --preid=alpha && npm publish --tag next
+      # run: npm publish --tag next
+      # env:
+      #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@master

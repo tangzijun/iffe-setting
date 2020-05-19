@@ -134,7 +134,7 @@ function LogInWrap(props) {
             </Button>
             <Box height={8} />
             <SmallTitle>
-              需要新的账号?&nbsp
+              需要新的账号?<span>&nbsp;</span>
               <Button
                 type={"link"}
                 href={"https://tangzijun.github.io/iffe-setting"}
