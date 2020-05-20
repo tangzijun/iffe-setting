@@ -2,7 +2,7 @@ import React from "react";
 import "typeface-roboto"; // Google字体
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import { SettingView } from "./components/setting/index";
@@ -28,30 +28,20 @@ function App() {
         <div>
           <Link to={"./login"}></Link>
           <Link to={"./setting"}></Link>
+          <Link to={"./iffe-setting"}></Link>
         </div>
-
-        <Switch>
-          <Route path="/" exact>
-            <div>
-              <LogIn />
-            </div>
-          </Route>
-          <Route path="/iffe-setting" exact>
-            <div>
-              <LogIn />
-            </div>
-          </Route>
-          <Route path="/login" exact>
-            <div>
-              <LogIn />
-            </div>
-          </Route>
-          <Route exact path="/setting">
-            <div>
-              <SettingView />
-            </div>
-          </Route>
-        </Switch>
+        <Route path="/" exact>
+          <LogIn />
+        </Route>
+        <Route path="/iffe-setting" exact>
+          <SettingView />
+        </Route>
+        <Route path="/login" exact>
+          <LogIn />
+        </Route>
+        <Route path="/setting" exact>
+          <SettingView />
+        </Route>
       </Router>
     </ThemeProvider>
   );
