@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/styles";
 import Box from "@material-ui/core/Box";
+import { useHistory } from "react-router-dom";
 import {
   DesTitle,
   BigTitle,
@@ -79,9 +80,11 @@ const useStyles = makeStyles((theme) => ({
 
 function LogInWrap(props) {
   const { url, QRcode } = props;
+  let history = useHistory();
   const getWindowSize = () => ({
     innerWidth: window.innerWidth,
   });
+
   const [windowSize, setWindowSize] = useState(getWindowSize());
   const handleResize = () => {
     setWindowSize(getWindowSize());
@@ -128,6 +131,7 @@ function LogInWrap(props) {
               block={true}
               onClick={(e) => {
                 console.log(e.target);
+                history.push("setting");
               }}
             >
               登录

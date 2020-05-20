@@ -3,7 +3,7 @@ import "typeface-roboto"; // Google字体
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Link,
   withRouter,
@@ -45,7 +45,9 @@ function App() {
             <LogIn />
           </Route>
           <Route path="/setting" exact>
-            <SettingView />
+            <div>
+              <SettingView />
+            </div>
           </Route>
         </div>
       </Router>
