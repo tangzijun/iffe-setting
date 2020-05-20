@@ -3,7 +3,7 @@ import "typeface-roboto"; // Google字体
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Link,
   withRouter,
