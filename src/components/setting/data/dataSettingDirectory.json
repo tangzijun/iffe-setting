@@ -6,15 +6,15 @@
       "nodes": [
         {
           "title": "我的账户",
-          "url": "/usersettingsaccount"
+          "url": "/setting/usersettingsaccount"
         },
         {
           "title": "隐私与安全",
-          "url": "./privacyandsecurity"
+          "url": "/setting/privacyandsecurity"
         },
         {
           "title": " 方案与付款",
-          "url": "./schemeandpayment"
+          "url": "/setting/schemeandpayment"
         }
       ]
     },
@@ -23,15 +23,15 @@
       "nodes": [
         {
           "title": "语言",
-          "url": "./language"
+          "url": "/setting/language"
         },
         {
           "title": "外观",
-          "url": "./theme"
+          "url": "/setting/theme"
         },
         {
           "title": "通知",
-          "url": "./message"
+          "url": "/setting/message"
         }
       ]
     },
@@ -40,19 +40,19 @@
       "nodes": [
         {
           "title": "快捷键",
-          "url": "./shortcutkey"
+          "url": "/setting/shortcutkey"
         },
         {
           "title": "markdown快捷键",
-          "url": "./markdownkey"
+          "url": "/setting/markdownkey"
         },
         {
           "title": "更新日志",
-          "url": "./updatelog"
+          "url": "/setting/updatelog"
         },
         {
           "title": "联系我们",
-          "url": "./connectwithus"
+          "url": "/setting/connectwithus"
         }
       ]
     }
