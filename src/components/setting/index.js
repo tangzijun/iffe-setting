@@ -6,7 +6,7 @@ import {
 } from "solidoc-base-component-lib";
 import { SettingContent } from "./setting-content/index";
 import { makeStyles } from "@material-ui/styles";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, withRouter } from "react-router-dom";
 const dataSettingDirectory = require("./data/dataSettingDirectory.json");
 const dataSettingHintIcon = require("./data/dataSettingHintIcon.json");
 
@@ -122,4 +122,4 @@ function SettingView() {
     </Router>
   );
 }
-export { SettingView };
+export default withRouter(SettingView);
