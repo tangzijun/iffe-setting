@@ -7,7 +7,7 @@ import {
   DefaultTitle,
   DesTitle,
   SettingBoxRadioButtonGroupView,
-  SettingSelectButtonView,
+  SettingCheckbox,
   SettingSlider,
 } from "solidoc-base-component-lib";
 /**
@@ -53,10 +53,9 @@ function Theme() {
       <DesTitle>聊天字体缩放</DesTitle>
       <SettingSlider />
       <Box m={3} />
-      <SettingSelectButtonView
-        text={"与电脑同步"}
-        onClick={(item) => console.log(item)}
-      />
+      <SettingCheckbox onClick={(item) => console.log(item)}>
+        与电脑同
+      </SettingCheckbox>
     </SettingContainer>
   );
 }

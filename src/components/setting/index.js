@@ -3,12 +3,19 @@ import {
   SettingDirectory,
   SettingHintIcon,
   SettingHintText,
+  ThemeWrap,
 } from "solidoc-base-component-lib";
 import { SettingContent } from "./setting-content/index";
 import { makeStyles } from "@material-ui/styles";
-import { BrowserRouter as Router, withRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 const dataSettingDirectory = require("./data/dataSettingDirectory.json");
 const dataSettingHintIcon = require("./data/dataSettingHintIcon.json");
+
+/**
+ * @description: 设置页面
+ * @param {type}
+ * @return:
+ */
 
 const useStyles = makeStyles((theme) => ({
   setting: (newType) => ({
@@ -18,14 +25,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     margin: 0,
     padding: 0,
-    backgroundColor: theme.app.settingWrap.backgroundColor,
+    backgroundColor: theme.app.Setting.color16,
   }),
   settingLeft: {
     display: "flex",
     justifyContent: "flex-end",
     width: "35%",
     height: "100%",
-    backgroundColor: theme.app.settingDirectory.backgroundColor,
+    backgroundColor: theme.app.Setting.color17,
     flexWrap: "wrap",
     overflow: "auto",
     overflowY: "scroll",
@@ -34,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
       width: 3,
     },
     "&::-webkit-scrollbar-thumb": {
-      backgroundColor: theme.app.settingDirectory.scrollbarColor,
+      backgroundColor: theme.app.Setting.color18,
       borderRadius: 2,
     },
     // 火狐浏览器轨道宽度
@@ -46,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     width: "65%",
-    backgroundColor: theme.app.settingContent.backgroundColor,
+    backgroundColor: theme.app.Setting.color14,
   },
   directory: {
     display: "flex",
@@ -69,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
       width: 6,
     },
     "&::-webkit-scrollbar-thumb": {
-      backgroundColor: theme.app.settingContent.scrollbarColor,
+      backgroundColor: theme.app.Setting.color19,
       borderRadius: 2,
     },
     // 火狐浏览器轨道宽度
@@ -115,11 +122,13 @@ function SettingView() {
         {/* 内容 */}
         <div className={classes.settingRight}>
           <div className={classes.content}>
-            <SettingContent />
+            <ThemeWrap>
+              <SettingContent />
+            </ThemeWrap>
           </div>
         </div>
       </div>
     </Router>
   );
 }
-export default withRouter(SettingView);
+export default SettingView;

@@ -1,32 +1,23 @@
 import React from "react";
-import "typeface-roboto"; // Google字体
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import {
   HashRouter as Router,
   Route,
   Link,
-  withRouter,
+  // withRouter,
 } from "react-router-dom";
+import { ThemeWrap } from "solidoc-base-component-lib";
 import SettingView from "./components/setting/index";
-import getAppTheme from "./app-theme";
 import { LogIn } from "./components/login";
 
-function App() {
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+/**
+ * @description: 项目入口
+ * @param {type}
+ * @return:
+ */
 
-  const theme = React.useMemo(() => {
-    const themeType = prefersDarkMode ? "dark" : "light";
-    return createMuiTheme({
-      app: getAppTheme(themeType),
-      palette: {
-        type: themeType,
-        isDark: prefersDarkMode,
-      },
-    });
-  }, [prefersDarkMode]);
+function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeWrap>
       <Router>
         <div>
           <Link to={"/"}></Link>
@@ -45,13 +36,11 @@ function App() {
             <LogIn />
           </Route>
           <Route path="/setting" exact>
-            <div>
-              <SettingView />
-            </div>
+            <SettingView />
           </Route>
         </div>
       </Router>
-    </ThemeProvider>
+    </ThemeWrap>
   );
 }
-export default withRouter(App);
+export default App;

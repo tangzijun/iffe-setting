@@ -7,11 +7,11 @@ import imgURL from "./login.jpg";
  * @returns
  */
 
-function LogIn() {
+function Regieter() {
   return (
     <div>
       <LogInWrap url={imgURL} />;
     </div>
   );
 }
-export { LogIn };
+export { Regieter };
