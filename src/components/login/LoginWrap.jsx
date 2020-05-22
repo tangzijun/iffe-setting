@@ -51,14 +51,15 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     position: "relative",
     width: "100vw",
-    maxWidth: "1500px",
-    minWidth: "550px",
+    // maxWidth: "1500px",
+    // minWidth: 800,
     minHeight: "100vh",
   },
   LogInContent: {
     display: "flex",
     padding: 32,
     borderRadius: 5,
+    margin: 20,
     background: theme.app.Setting.color14,
   },
   left: {

@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LogInWrap(props) {
+function RegieterWrap(props) {
   const { url, QRcode } = props;
   let history = useHistory();
   const getWindowSize = () => ({
@@ -186,4 +186,4 @@ function LogInWrap(props) {
     </ThemeWrap>
   );
 }
-export { LogInWrap };
+export { RegieterWrap };

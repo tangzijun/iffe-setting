@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LogInWrap } from "./LoginWrap";
+import { RegieterWrap } from "./RegieterWrap";
 import imgURL from "./login.jpg";
 /**
  * 登录组件
@@ -10,7 +10,7 @@ import imgURL from "./login.jpg";
 function Regieter() {
   return (
     <div>
-      <LogInWrap url={imgURL} />;
+      <RegieterWrap url={imgURL} />;
     </div>
   );
 }
