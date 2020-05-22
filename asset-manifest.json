@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/iffe-setting/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/iffe-setting/static/js/main.2a03a308.chunk.js",
+    "main.js.map": "/iffe-setting/static/js/main.2a03a308.chunk.js.map",
+    "runtime-main.js": "/iffe-setting/static/js/runtime-main.5929030e.js",
+    "runtime-main.js.map": "/iffe-setting/static/js/runtime-main.5929030e.js.map",
+    "static/css/2.cff6f7d7.chunk.css": "/iffe-setting/static/css/2.cff6f7d7.chunk.css",
+    "static/js/2.a7dc3b2f.chunk.js": "/iffe-setting/static/js/2.a7dc3b2f.chunk.js",
+    "static/js/2.a7dc3b2f.chunk.js.map": "/iffe-setting/static/js/2.a7dc3b2f.chunk.js.map",
+    "index.html": "/iffe-setting/index.html",
+    "precache-manifest.8ebe2147a49a5be6b845ce6b13ebc106.js": "/iffe-setting/precache-manifest.8ebe2147a49a5be6b845ce6b13ebc106.js",
+    "service-worker.js": "/iffe-setting/service-worker.js",
+    "static/css/2.cff6f7d7.chunk.css.map": "/iffe-setting/static/css/2.cff6f7d7.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/iffe-setting/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.a7dc3b2f.chunk.js.LICENSE.txt": "/iffe-setting/static/js/2.a7dc3b2f.chunk.js.LICENSE.txt",
+    "static/media/material-design-icons.css": "/iffe-setting/static/media/MaterialIcons-Regular.da4ea5cd.ttf",
+    "static/media/login.jpg": "/iffe-setting/static/media/login.fd91131e.jpg",
+    "static/media/index.css": "/iffe-setting/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5929030e.js",
+    "static/css/2.cff6f7d7.chunk.css",
+    "static/js/2.a7dc3b2f.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2a03a308.chunk.js"
+  ]
+}
