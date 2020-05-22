@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import Box from "@material-ui/core/Box";
 import { useHistory } from "react-router-dom";
@@ -86,20 +86,6 @@ const useStyles = makeStyles((theme) => ({
 function LogInWrap(props) {
   const { url, QRcode } = props;
   let history = useHistory();
-  const getWindowSize = () => ({
-    innerWidth: window.innerWidth,
-  });
-
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-  const handleResize = () => {
-    setWindowSize(getWindowSize());
-  };
-  useEffect(() => {
-    // 监听
-    window.addEventListener("resize", handleResize);
-    // 销毁
-    return () => window.removeEventListener("resize", handleResize);
-  });
 
   const classes = useStyles();
   return (
@@ -127,10 +113,12 @@ function LogInWrap(props) {
               <DesTitle>密码</DesTitle>
               <Box height={8} />
               <Input />
-              <Box height={4} />
-              <Button type={"link"} href={"https://www.baidu.com/"}>
-                忘记密码？
-              </Button>
+              <Box height={8} />
+              <SmallTitle>
+                <Button type={"link"} href={"https://www.baidu.com/"}>
+                  忘记密码？
+                </Button>
+              </SmallTitle>
               <Box height={20} />
               <Button
                 type={"primary"}
@@ -147,13 +135,13 @@ function LogInWrap(props) {
                 需要新的账号?<span>&nbsp;</span>
                 <Button
                   type={"link"}
-                  href={"https://tangzijun.github.io/setting"}
+                  href={"http://localhost:3000/iffe-setting#/regieter"}
                 >
                   注册
                 </Button>
               </SmallTitle>
             </div>
-            {QRcode && windowSize.innerWidth > 830 && (
+            {QRcode > 830 && (
               <div className={classes.right}>
                 <div className={classes.qrcode}>
                   <img

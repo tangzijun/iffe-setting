@@ -136,17 +136,23 @@ function PrivacyAndSecurity() {
       <Box height={40} />
       <BorderTitleView
         text={
-          <span>
+          <SmallTitle>
             快速阅读我的
-            <SettingLinkButton href={"https://www.baidu.com/"}>
+            <SettingLinkButton
+              type={"link"}
+              href={"https://tangzijun.github.io/setting"}
+            >
               服务条款
             </SettingLinkButton>
             和
-            <SettingLinkButton href={"https://www.baidu.com/"}>
+            <SettingLinkButton
+              type={"link"}
+              href={"https://tangzijun.github.io/setting"}
+            >
               隐私权政策
             </SettingLinkButton>
             吧
-          </span>
+          </SmallTitle>
         }
       ></BorderTitleView>
     </SettingContainer>

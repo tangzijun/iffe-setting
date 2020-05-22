@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import Box from "@material-ui/core/Box";
 import { useHistory } from "react-router-dom";
@@ -51,8 +51,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     position: "relative",
     width: "100vw",
-    maxWidth: "1500px",
-    minWidth: "550px",
+    // maxWidth: "1500px",
+    // minWidth: "550px",
     minHeight: "100vh",
   },
   LogInContent: {
@@ -85,21 +85,6 @@ const useStyles = makeStyles((theme) => ({
 function RegieterWrap(props) {
   const { url, QRcode } = props;
   let history = useHistory();
-  const getWindowSize = () => ({
-    innerWidth: window.innerWidth,
-  });
-
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-  const handleResize = () => {
-    setWindowSize(getWindowSize());
-  };
-  useEffect(() => {
-    // 监听
-    window.addEventListener("resize", handleResize);
-    // 销毁
-    return () => window.removeEventListener("resize", handleResize);
-  });
-
   const classes = useStyles();
   return (
     <ThemeWrap>
@@ -110,26 +95,19 @@ function RegieterWrap(props) {
         <div className={classes.LogInContentWrap}>
           <div className={classes.LogInContent}>
             <div className={classes.left}>
-              <BigTitle position={"center"}>欢迎回来！</BigTitle>
-              <Box height={8} />
-              <DefaultTitle
-                position={"center"}
-                style={{ color: "rgb(185,187,190)" }}
-              >
-                很高兴再次见到您！
-              </DefaultTitle>
+              <BigTitle position={"center"}>创建一个账号</BigTitle>
               <Box height={20} />
               <DesTitle>电子邮件</DesTitle>
+              <Box height={8} />
+              <Input />
+              <Box height={8} />
+              <DesTitle>用户名</DesTitle>
               <Box height={8} />
               <Input />
               <Box height={8} />
               <DesTitle>密码</DesTitle>
               <Box height={8} />
               <Input />
-              <Box height={4} />
-              <Button type={"link"} href={"https://www.baidu.com/"}>
-                忘记密码？
-              </Button>
               <Box height={20} />
               <Button
                 type={"primary"}
@@ -139,20 +117,33 @@ function RegieterWrap(props) {
                   history.push("setting");
                 }}
               >
-                登录
+                继续
               </Button>
               <Box height={8} />
               <SmallTitle>
-                需要新的账号?<span>&nbsp;</span>
+                <Button type={"link"} href={"https://www.baidu.com/"}>
+                  已经拥有账号？
+                </Button>
+              </SmallTitle>
+              <Box height={20} />
+              <SmallTitle>
+                进行注册即表示你同意XXX的
                 <Button
                   type={"link"}
                   href={"https://tangzijun.github.io/setting"}
                 >
-                  注册
+                  服务条款
+                </Button>
+                和
+                <Button
+                  type={"link"}
+                  href={"https://tangzijun.github.io/setting"}
+                >
+                  隐私权政策
                 </Button>
               </SmallTitle>
             </div>
-            {QRcode && windowSize.innerWidth > 830 && (
+            {QRcode && (
               <div className={classes.right}>
                 <div className={classes.qrcode}>
                   <img

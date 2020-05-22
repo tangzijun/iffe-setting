@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
   setting: (newType) => ({
     display: "flex",
     justifyContent: "center",
-    height: newType.height,
+    // height: newType.height,
+    height: "100vh",
     width: "100%",
     margin: 0,
     padding: 0,

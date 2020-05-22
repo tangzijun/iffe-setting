@@ -18238,10 +18238,10 @@ socks@~2.3.2:
     ip "1.1.5"
     smart-buffer "^4.1.0"
 
-solidoc-base-component-lib@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/solidoc-base-component-lib/-/solidoc-base-component-lib-1.4.4.tgz#00f01e6744cf4f645d9c2b530ab932e698c7b4b7"
-  integrity sha512-A9KJX8yADqsoTFKCI/SKZ8yYhwlmH9l3/BolyqY0skl9fiMMG/9NOrSlpAphm4ZJm1JkkUorMFW41lSlU6+jIQ==
+solidoc-base-component-lib@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/solidoc-base-component-lib/-/solidoc-base-component-lib-1.4.5.tgz#4fc172465f87930daa46bd8f1ed4729c0b6b771f"
+  integrity sha512-2GQptjX7k2fQS7kLNIcxbYH26nTRXaMqaAchbLj8fqejsA2lk2+rcEtgseA1IgLYtg0Rgu/Uv8ja8iNdEA0FdQ==
   dependencies:
     "@date-io/date-fns" "^2.6.1"
     "@material-ui/core" "^4.9.13"
