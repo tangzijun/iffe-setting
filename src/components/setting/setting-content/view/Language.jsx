@@ -4,7 +4,7 @@ import {
   SettingRoundRadioButtonGroupView,
   SettingContainer,
   DefaultTitle,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 import Box from "@material-ui/core/Box";
 
 /**

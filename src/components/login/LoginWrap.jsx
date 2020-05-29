@@ -6,12 +6,12 @@ import {
   DesTitle,
   BigTitle,
   DefaultTitle,
-  Button,
-  Input,
   SmallTitle,
-  ThemeWrap,
-} from "solidoc-base-component-lib";
+  // ThemeWrap,
+} from "@solidoc/setting";
+import { Button, Input } from "@solidoc/common";
 
+import { ThemeWrap } from "solidoc-base-component-lib";
 /**
  * @description: 登录页面
  * @param {type}

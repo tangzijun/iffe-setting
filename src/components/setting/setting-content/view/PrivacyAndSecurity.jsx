@@ -13,7 +13,7 @@ import {
   SettingLinkButton,
   BorderTitleView,
   SettingDivider,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 
 /**
  * @param PrivacyAndSecurity 隐私与安全

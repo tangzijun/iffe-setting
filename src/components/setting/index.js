@@ -3,8 +3,8 @@ import {
   SettingDirectory,
   SettingHintIcon,
   SettingHintText,
-  ThemeWrap,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
+import { ThemeWrap } from "solidoc-base-component-lib";
 import { SettingContent } from "./setting-content/index";
 import { makeStyles } from "@material-ui/styles";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
   setting: (newType) => ({
     display: "flex",
     justifyContent: "center",
-    // height: newType.height,
     height: "100vh",
     width: "100%",
     margin: 0,

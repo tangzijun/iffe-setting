@@ -28,6 +28,10 @@
   "dependencies": {
     "@material-ui/core": "^4.9.13",
     "@material-ui/styles": "^4.9.13",
+    "@solidoc/common": "^1.1.0",
+    "@solidoc/emoji": "^1.1.0",
+    "@solidoc/menu": "^1.1.0",
+    "@solidoc/setting": "^1.1.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -36,7 +40,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "solidoc-base-component-lib": "^1.4.5"
+    "solidoc-base-component-lib": "^1.4.5",
+    "typescript": "^3.9.3"
   },
   "eslintConfig": {
     "extends": "react-app"

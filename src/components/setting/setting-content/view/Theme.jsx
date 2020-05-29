@@ -2,14 +2,14 @@ import React from "react";
 import Box from "@material-ui/core/Box";
 import {
   SelectButtonGroupView,
-  SwitchButton,
+  SettingSwitchButton,
   SettingContainer,
   DefaultTitle,
   DesTitle,
   SettingBoxRadioButtonGroupView,
   SettingCheckbox,
   SettingSlider,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 /**
  * @param Theme 外观 主题
  * @returns
@@ -21,7 +21,7 @@ function Theme() {
       <DefaultTitle>外观</DefaultTitle>
       <Box height={20} />
       <SelectButtonGroupView data={[{ text: "开启桌面通知" }]}>
-        <SwitchButton />
+        <SettingSwitchButton />
       </SelectButtonGroupView>
       <Box m={3} />
       <DesTitle>主题</DesTitle>

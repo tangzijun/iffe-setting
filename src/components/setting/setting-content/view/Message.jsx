@@ -1,10 +1,10 @@
 import React from "react";
 import {
   SelectButtonGroupView,
-  SwitchButton,
+  SettingSwitchButton,
   SettingContainer,
   DefaultTitle,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 import Box from "@material-ui/core/Box";
 
 /**
@@ -24,7 +24,7 @@ function Message() {
           },
         ]}
       >
-        <SwitchButton />
+        <SettingSwitchButton />
       </SelectButtonGroupView>
     </SettingContainer>
   );

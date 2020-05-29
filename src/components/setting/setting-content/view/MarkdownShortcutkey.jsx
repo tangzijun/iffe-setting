@@ -1,12 +1,12 @@
 import React from "react";
 import {
   SelectButtonGroupView,
-  SwitchButton,
+  SettingSwitchButton,
   SettingContainer,
   DefaultTitle,
   BorderTitleView,
   SettingLinkButton,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 import Box from "@material-ui/core/Box";
 /**
  * @param MarkdownShortcutkey Markdown快捷键
@@ -25,7 +25,7 @@ function MarkdownShortcutkey() {
           },
         ]}
       >
-        <SwitchButton />
+        <SettingSwitchButton />
       </SelectButtonGroupView>
       <Box height={40} />
       <BorderTitleView

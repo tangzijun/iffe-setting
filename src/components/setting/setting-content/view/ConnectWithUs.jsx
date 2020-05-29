@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultTitle, SettingContainer } from "solidoc-base-component-lib";
+import { DefaultTitle, SettingContainer } from "@solidoc/setting";
 import Box from "@material-ui/core/Box";
 /**
  * @param ConnectWithUs  联系我们

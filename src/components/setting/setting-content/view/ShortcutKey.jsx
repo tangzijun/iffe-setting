@@ -1,13 +1,13 @@
 import React from "react";
 import {
   SelectButtonGroupView,
-  SwitchButton,
+  SettingSwitchButton,
   SettingContainer,
   DefaultTitle,
   BorderTitleView,
   SettingLinkButton,
   SettingDivider,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 import Box from "@material-ui/core/Box";
 
 /**
@@ -27,7 +27,7 @@ function ShortcutKey() {
           },
         ]}
       >
-        <SwitchButton />
+        <SettingSwitchButton />
       </SelectButtonGroupView>
       <Box height={20} />
       <BorderTitleView

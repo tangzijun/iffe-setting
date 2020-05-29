@@ -6,7 +6,7 @@ import {
   SettingContainer,
   DefaultTitle,
   SettingUserInfoView,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 
 /** 我的账户
  * @param UserSettingsAccount 我的账户

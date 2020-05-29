@@ -7,7 +7,7 @@ import {
   SettingPrimaryButton,
   BorderTitleView,
   SettingLinkButton,
-} from "solidoc-base-component-lib";
+} from "@solidoc/setting";
 
 /**
  * @param SchemeAndPayment 方案与付款
