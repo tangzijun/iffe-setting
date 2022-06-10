@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "iffe-commit": "^1.1.1",
-    "semantic-release": "^17.0.7"
+    "semantic-release": "^19.0.3"
   },
   "config": {
     "commitizen": {
